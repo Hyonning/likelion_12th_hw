@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{%load static%}
+{%block content%}
+  <div>
+    <img src="{%static 'images/logo.png'%}" alt="logo" width="100px">
+    <h1 class="contents">2024 멋쟁이사자처럼 {{generation}}</h1>
+    <div class="contents">Welcome Django!</div>
+    <div>🦁Django 복습
+      <ul>
+        <li>오늘 배운 것 : {{info.mtv}}</li>
+        <li>Model : {{info.model}}</li>
+        <li>Template : {{info.templates}}</li>
+        <li>View : {{info.view}}</li>
+      </ul>
+    </div>
+    <div>🤓오늘의 멋쟁이
+      <ul>
+        {%for member in members%}
+        <li>{{member}}</li>
+        {%endfor%}
+      </ul>
+
+{%endblock%}
