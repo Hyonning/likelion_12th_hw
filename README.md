@@ -1,4 +1,4 @@
-#likelion_12th_session
+###likelion_12th_session
 django 사용법
 
 1. 가상환경 설정
